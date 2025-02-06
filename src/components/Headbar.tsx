@@ -89,34 +89,34 @@ export function Headbar() {
   }, [rightActive])
 
   const leftLinks = [
-    { label: 'Home', link: '/' },
+    { label: '主页', link: '/' },
     // {
     //   label: (<>
     //     <span>Pro</span>
     //     <sup className={'pl-1 opacity-90 group-hover:opacity-100 text-xs font-medium text-pro-500'}>New</sup>
     //   </>), link: '/pro'
     // },
-    { label: 'Downloads', link: '/downloads' },
+    { label: '下载', link: '/downloads' },
   ]
 
   const rightLinks = [
     {
-      label: 'Community Hub',
+      label: '社区',
       link: 'https://hub.logseq.com',
       icon: <ArrowSquareOut size={15} weight={'bold'}/>,
     },
     {
-      label: 'Docs',
+      label: '文档',
       link: 'https://docs.logseq.com/',
       icon: <ArrowSquareOut size={15} weight={'bold'}/>,
     },
     {
-      label: 'Jobs',
+      label: '招聘',
       link: 'https://blog.logseq.com/jobs',
       icon: <ArrowSquareOut size={15} weight={'bold'}/>,
     },
     {
-      label: 'Blog',
+      label: '博客',
       link: 'https://blog.logseq.com',
       icon: <ArrowSquareOut size={15} weight={'bold'}/>,
     },
@@ -161,7 +161,7 @@ export function Headbar() {
                       {typeof leftIconFn === 'function'
                         ? leftIconFn({ weight: 'bold' })
                         : leftIconFn}
-                      <span className={'pl-2'}>Download for {active?.[0]}</span>
+                      <span className={'pl-2'}>下载 {active?.[0]}</span>
                       {rightIconFn?.()}
                     </button>
                   )

@@ -19,37 +19,36 @@ import { slugify, navigateTabs } from '../../components/utils'
 
 const featuresSlideItems = [
   {
-    label: 'Students',
+    label: '学生',
     icon: '🧑‍🎓',
     notes: [
       {
         icon: <ClockCounterClockwise size={20} weight="duotone"/>,
-        title: 'Review notes',
-        desc: <span>Capture, structure, and review all of your class notes with ease using the
-          <a> Linked References</a>, <a target='_blank' href="https://docs.logseq.com/#/page/queries">Queries</a>, and <a target='_blank' href="https://docs.logseq.com/#/page/search">Search</a> features.</span>
+        title: '复习笔记',
+        desc: <span>通过使用<a>链接引用</a>、<a target='_blank' href="https://docs.logseq.com/#/page/queries">查询</a>和<a target='_blank' href="https://docs.logseq.com/#/page/search">搜索</a>功能，轻松捕捉、组织并复习所有的课堂笔记。</span>
       },
       {
         icon: <Brain size={20} weight="duotone"/>,
-        title: 'Memorize facts',
-        desc: (<span>Remember facts and insights using the <a target='_blank' href="https://docs.logseq.com/#/page/flashcards">Flashcards</a> feature.</span>)
+        title: '记忆能力',
+        desc: 
+        (<span>使用<a target='_blank' href="https://docs.logseq.com/#/page/flashcards">记忆卡片</a>功能记住事实和洞察。</span>)
       },
       {
         icon: <PencilLine size={20} weight="duotone"/>,
-        title: 'Outline essays',
+        title: '大纲写作',
         desc: (
-          <span>Organize your thoughts and ideas, and quickly turn them into outlines using <a target='_blank' href="https://docs.logseq.com/#/page/term%2Fblock%20reference">Block References</a>.</span>)
+          <span>整理你的思维和想法，并通过<a target='_blank' href="https://docs.logseq.com/#/page/term%2Fblock%20reference">块引用</a>快速将它们转化为大纲。</span>)
       }
     ]
   },
   {
-    label: 'Academics',
+    label: '学者',
     icon: '🎓',
     notes: [
       {
         icon: <ClockCounterClockwise size={20} weight="duotone"/>,
-        title: 'Review notes',
-        desc: <span>Capture, structure, and review all of your class notes with ease using the
-          <a> Linked References</a>, <a target='_blank' href="https://docs.logseq.com/#/page/queries">Queries</a>, and <a target='_blank' href="https://docs.logseq.com/#/page/search">Search </a>features.</span>
+        title: '复习笔记',
+        desc: <span>通过使用<a>链接引用</a>、<a target='_blank' href="https://docs.logseq.com/#/page/queries">查询</a>和<a target='_blank' href="https://docs.logseq.com/#/page/search">搜索</a>功能，轻松捕捉、组织并复习所有的课堂笔记。</span>
       },
       {
         icon: <Binoculars size={20} weight="duotone"/>,
@@ -71,14 +70,13 @@ const featuresSlideItems = [
     ]
   },
   {
-    label: 'Writers',
+    label: '作家',
     icon: '🖋',
     notes: [
       {
         icon: <ClockCounterClockwise size={20} weight="duotone"/>,
-        title: 'Review notes',
-        desc: <span>Capture, structure, and review all of your class notes with ease using the
-          <a> Linked References</a>, <a target='_blank' href="https://docs.logseq.com/#/page/queries">Queries</a>, and <a target='_blank' href="https://docs.logseq.com/#/page/search">Search </a>features.</span>
+        title: '复习笔记',
+        desc: <span>通过使用<a>链接引用</a>、<a target='_blank' href="https://docs.logseq.com/#/page/queries">查询</a>和<a target='_blank' href="https://docs.logseq.com/#/page/search">搜索</a>功能，轻松捕捉、组织并复习所有的课堂笔记。</span>
       },
       {
         icon: <CalendarCheck size={20} weight="duotone"/>,
@@ -108,7 +106,7 @@ const featuresSlideItems = [
     ]
   },
   {
-    label: 'Project Managers',
+    label: '项目经理',
     icon: '📆',
     notes: [
       {
@@ -148,7 +146,7 @@ const featuresSlideItems = [
     ]
   },
   {
-    label: 'Developers',
+    label: '开发者',
     icon: '💻',
     notes: [
       {
@@ -367,20 +365,15 @@ export function TutorialShowcase (
         {(t: Array<string>) => {
           return (
             <>
-              <h1 className={cx('text-4xl sm:text-6xl text-logseq-50/80 invisible', t[0] && 'ani-slide-in-from-bottom')}>Today,
-                everyone is
-                a</h1>
+              <h1 className={cx('text-4xl sm:text-6xl text-logseq-50/80 invisible', t[0] && 'ani-slide-in-from-bottom')}>今天，每个人都是</h1>
               <h2
-                className={cx('text-4xl sm:text-6xl font-semibold pt-1 opacity-94 invisible', t[1] && 'ani-slide-in-from-bottom')}>knowledge
-                worker.</h2>
+                className={cx('text-4xl sm:text-6xl font-semibold pt-1 opacity-94 invisible', t[1] && 'ani-slide-in-from-bottom')}>知识工作者。</h2>
 
               <div
                 className={cx('pt-2 sm:pt-0 sm:flex justify-center sm:flex-col items-center invisible', t[2] && 'ani-fade-in')}>
-                <h3 className="inline text-2xl sm:text-4xl font-normal pt-8 text-logseq-50/80">Logseq is the
-                  open toolbox
-                  for </h3>
+                <h3 className="inline text-2xl sm:text-4xl font-normal pt-8 text-logseq-50/80">Logseq 是一个开放的工具箱 </h3>
                 <h4 className="inline text-2xl sm:text-4xl pt-2 opacity-94">
-                  workflows that deal with lots of information:
+                专为处理大量信息的工作流程而设计：
                 </h4>
               </div>
             </>
@@ -390,12 +383,12 @@ export function TutorialShowcase (
 
       {/* Head icons */}
       <ul className="hidden sub-hd sm:flex justify-center space-x-10">
-        <li>Task Management</li>
-        <li>PDF Annotations</li>
-        <li>Flashcards</li>
+        <li>任务管理</li>
+        <li>PDF 注解</li>
+        <li>记忆卡片</li>
         <li>
           <span className="relative">
-            Whiteboards<sup>NEW</sup>
+            白板<sup>NEW</sup>
           </span>
         </li>
       </ul>

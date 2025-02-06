@@ -6,4 +6,4 @@ compatibility_date = "2022-09-29"
 ENVIRONMENT = "dev"
 
 [env.production.vars]
-ENVIRONMENT = "production"
+ENVIRONMENT = "production"yarn

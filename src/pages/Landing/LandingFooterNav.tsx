@@ -35,15 +35,15 @@ export function FeaturesBoards () {
         <div className="inner">
           <div className="l info-wrap flex-1">
             <strong><CloudCheck size={38} weight={'duotone'}/></strong>
-            <h1>Logseq Sync <sup>BETA</sup></h1>
+            <h1>Logseq 同步<sup>BETA</sup></h1>
             <h2>
-              <span>Always up-to-date notes</span> <br/>
-              <span className="text-logseq-50/80">between all your devices.</span>
+              <span>在所有设备之间</span> <br/>
+              <span className="text-logseq-50/80">保持笔记始终最新。</span>
             </h2>
             <h3 className="hidden sm:block">
               <span
-                className="text-logseq-50/80">With encrypted file syncing, you'll always have your <br/> notes </span>
-              <span>backed up and securely available in real-time <br/> on any device. </span>
+                className="text-logseq-50/80">通过加密文件同步, 你的笔记能够随时备份 </span>
+              <span>并在任何设备上安全实时地访问。 </span>
             </h3>
           </div>
 
@@ -57,17 +57,17 @@ export function FeaturesBoards () {
 
           <div className="r info-wrap flex-1">
             <strong><ScribbleLoop size={38} weight={'duotone'}/></strong>
-            <h1>Whiteboards <sup>BETA</sup></h1>
+            <h1>白板 <sup>BETA</sup></h1>
 
             <h2>
-              <span>A new canvas</span> <br/>
-              <span className="text-logseq-50/80">for your thoughts.</span>
+              <span>这是一块新的画布</span> <br/>
+              <span className="text-logseq-50/80">为你的思维而生。</span>
             </h2>
 
             <h3 className="hidden sm:block">
-              <span className="text-logseq-50/80">Place any of your thoughts from the knowledge base <br/>
-              or new ones next to each other on an infinite canvas</span> <br/>
-              <span>to connect, associate and understand in new ways.</span>
+              <span className="text-logseq-50/80">将知识库中的任何思维，或是新的思维，<br/>
+              放置在彼此相邻的地方，在这无限的画布上，</span> <br/>
+              <span>以新的方式连接、关联、理解。</span>
             </h3>
           </div>
 
@@ -185,16 +185,14 @@ export function LandingFooterDesc (props: {
             <>
               <h1
                 className="text-4xl -mt-[230px] leading-9 pb-2 sm:mt-0 sm:text-6xl sm:text-center sm:py-10 bg-radial">
-                <strong className="font-semibold">A safe space for </strong>
-                <span className="text-logseq-50/80">your thoughts.</span>
+                <strong className="font-semibold">一个安全的空间 </strong>
+                <span className="text-logseq-50/80">存放你的思维。</span>
               </h1>
 
               <h2 className="text-lg sm:text-[24px] sm:px-60 sm:text-center">
-                <span className="text-logseq-50/80">Designed to store your </span>
-                <strong className="font-normal">interests, questions, ideas, favorite quotes,
-                  reminders, reading and meeting
-                  notes </strong>
-                <span className="text-logseq-50/80">easily and future-proof:</span>
+                <span className="text-logseq-50/80">专为轻松存储你的 </span>
+                <strong className="font-normal">兴趣、问题、想法、喜爱的名言、提醒事项、阅读和会议笔记 </strong>
+                <span className="text-logseq-50/80">而设计 并且具备面向未来的可持续性:</span>
               </h2>
             </>}
         </div>)}
@@ -205,18 +203,18 @@ export function LandingFooterDesc (props: {
           null :
           <div className="cards">
             {[
-              [<GithubLogo size={34} weight={'duotone'}/>, 'Open source', 'Free forever for personal use'],
-              [<Keyhole size={34} weight={'duotone'}/>, 'Privacy first', 'You own your data locally forever'],
-              [<DeviceMobile weight={'duotone'} size={34}/>, 'Mobile apps', 'Available for iOS & Android'],
-              [<FileText size={34} weight={'duotone'}/>, 'Markdown files', 'Open your notes in other tools'],
-              [<HandWaving size={34} weight={'duotone'}/>, 'Strong community', (
+              [<GithubLogo size={34} weight={'duotone'}/>, '开源', '个人使用永久免费'],
+              [<Keyhole size={34} weight={'duotone'}/>, '隐私优先', '你永远拥有本地数据'],
+              [<DeviceMobile weight={'duotone'} size={34}/>, '移动应用', '支持 iOS 和 Android'],
+              [<FileText size={34} weight={'duotone'}/>, 'Markdown 文件', '可以在其他工具中打开你的笔记'],
+              [<HandWaving size={34} weight={'duotone'}/>, '强大的社区', (
                 <span className="flex space-x-2 items-center">
               <i className="w-[6px] h-[6px] bg-green-600 rounded-2xl"></i>
-              <span className="opacity-50">{appState.discord?.approximate_presence_count.get() || '-'} users online currently</span>
+              <span className="opacity-50">{appState.discord?.approximate_presence_count.get() || '-'} 当前在线人数</span>
             </span>)],
-              [<Globe size={34} weight={'duotone'}/>, 'Localization', 'Translated in many languages'],
-              [<PuzzlePiece size={34} weight={'duotone'}/>, '150+ Plugins', 'Extend functionality to your needs'],
-              [<Swatches size={34} weight={'duotone'}/>, '30+ Themes', 'Customize look and feel'],
+              [<Globe size={34} weight={'duotone'}/>, '本地化', '支持多种语言'],
+              [<PuzzlePiece size={34} weight={'duotone'}/>, '150+ 插件', '根据需求扩展功能'],
+              [<Swatches size={34} weight={'duotone'}/>, '30+ 主题', '自定义外观和体验'],
             ].map(([icon, title, desc]) => {
               if (typeof desc === 'string') {
                 desc = (<span className="opacity-50">{desc}</span>)
@@ -236,15 +234,15 @@ export function LandingFooterDesc (props: {
       {/* downloads */}
       <div className="actions">
         <h1 className="text-4xl leading-10 sm:leading-normal sm:text-6xl tracking-wide">
-          <span className="opacity-70">Think faster, </span>
-          <strong className="font-semibold">think better!</strong>
+          <span className="opacity-70">思绪更快, </span>
+          <strong className="font-semibold">思考更清晰!</strong>
         </h1>
 
         <h2 className="text-lg mt-4 sm:mt-0 sm:text-3xl sm:text-center sm:tracking-wide">
-          <strong className="opacity-70 font-normal">By thinking and writing with Logseq, you'll </strong><br/>
-          <span className="">gain confidence in what you know and <br/>
-            stop worrying about forgetting </span>
-          <strong className="opacity-70 font-normal">anything</strong>.
+          <strong className="opacity-70 font-normal">通过在 Logseq 中思考和记录,  </strong><br/>
+          <span className="">你将对自己的知识更有信心 <br/>
+          不再担心忘记任何重要的 </span>
+          <strong className="opacity-70 font-normal">事情</strong>.
         </h2>
 
         <div className="actions-4 sm:flex sm:space-x-4 pt-10 pb-1">
@@ -261,7 +259,7 @@ export function LandingFooterDesc (props: {
                   rightIcon={rightIcon}
                   className={'w-full sm:w-auto'}
                 >
-                  Download for {active?.[0]}
+                  下载 {active?.[0]}
                 </Button>
               )
             }}
@@ -273,7 +271,7 @@ export function LandingFooterDesc (props: {
             className={'w-full bg-logseq-600 mt-4 sm:w-auto sm:mt-0'}
             href={'https://demo.logseq.com'}
           >
-            Live Demo
+            在线演示
           </Button>
         </div>
       </div>
@@ -287,9 +285,10 @@ export function LandingFooterNav () {
   const links = (
     <div className="links flex flex-col justify-center">
       <p className="flex space-x-4 text-xs text-gray-300/90 pb-1">
-        <Link to={"/privacy-policy"}>Privacy</Link>
-        <Link to={"/terms"}>Terms</Link>
-        <a href="mailto:hi@logseq.com">Contact Us</a>
+        <Link to={"/privacy-policy"}>隐私协议</Link>
+        <Link to={"/terms"}>用户条款</Link>
+        <a href="mailto:hi@logseq.com">联系我们</a>
+        <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=r4rUMf0Wewr789CtIhZvL9RazuOUe58W&authKey=MbT27JUj%2FR0plJYdwR%2F6PWrqyOJVerAOiwdtpyYpGbKSlYyOiB3hufKc264ODySY&noverify=0&group_code=1022112042">QQ群：1022112042</a>
       </p>
       <p className="text-xs opacity-40 py-1">
         © {(new Date()).getFullYear()} Logseq, Inc.

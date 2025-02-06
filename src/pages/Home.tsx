@@ -49,9 +49,8 @@ export function HomePage () {
                       t[0] && 'ani-slide-in-from-bottom')}
                   >
                     <span
-                      className="text-logseq-50/80">Overwhelmed and constantly </span>
-                    <strong className="opacity-90">afraid of losing your
-                      thoughts?</strong>
+                      className="text-logseq-50/80">你是否感到不堪重负</span>
+                    <strong className="opacity-90">总是害怕遗忘自己的想法？</strong>
                   </h1>
 
                   <h2
@@ -59,11 +58,10 @@ export function HomePage () {
                       cx(
                         'sm:flex flex-col justify-center sm:text-center text-2xl tracking-wide invisible',
                         t[1] && 'ani-fade-in')}>
-                    <span className="text-logseq-50/80">Everyday you’re bombarded with information.</span>
-                    <span className="text-logseq-50/80">Your non-connected notes lead to missing context when </span>
+                    <span className="text-logseq-50/80">每天你都被信息淹没。</span>
+                    <span className="text-logseq-50/80">你零散的笔记会导致在需要时缺少上下文</span>
                     <strong className="font-normal">
-                      <span className="text-logseq-50/80">you need it. </span>
-                      That gets future-you into trouble.
+                      这会让未来的你陷入困境。
                     </strong>
                   </h2>
                 </>

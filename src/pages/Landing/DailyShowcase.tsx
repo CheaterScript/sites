@@ -12,7 +12,7 @@ const IconImageDataControl = new URL('assets/icon_data_control.png', import.meta
 
 const showcases = [
   {
-    label: 'Relationships',
+    label: '关系',
     iconUrl: IconImageRelations,
     descImgUrl: new URL('./assets/benefit-0.png', import.meta.url),
     refLink: 'https://discord.com/channels/725182569297215569/725188616695054356/1045646531090448436',
@@ -20,18 +20,17 @@ const showcases = [
     refType: 'discord',
     desc: (
       <p>
-        Communicate better. <span className="opacity-70">Stay on top of your <br/>relationships, conversations, and meetings.</span>
+        优化沟通方式。<span className="opacity-70">掌控你的人际关系、对话和会议。</span>
       </p>),
     feedback: (
       <p>
-        <span>“I mostly use it for work: keeping </span>daily notes & meeting notes. It's the best solution I've found
-        to managing my tasks
-        <span> (and I only use a fraction of the features there).”</span>
+        <span>“我主要用于工作：记录 </span>日常笔记和会议笔记。这是我找到的最好的任务管理解决方案
+        <span> (而且我只使用了其中一小部分功能).”</span>
       </p>
     )
   },
   {
-    label: 'Daily Plan',
+    label: '日常计划',
     iconUrl: IconImageDailyPlan,
     descImgUrl: new URL('./assets/benefit-1.png', import.meta.url),
     refLink: 'https://discord.com/channels/725182569297215569/918889676071374889/1050520429258887320',
@@ -39,20 +38,19 @@ const showcases = [
     userName: 'breadchris',
     desc: (
       <p>
-        <span>Channel your attention, </span>
-        reduce stress.
+        <span>集中注意力, </span>
+        减轻压力.
       </p>),
     feedback: (
       <p>
-        <span>“I used to hate taking notes. </span>
-        If I told my past self that I wouldn't just like taking notes, but that I would become addicted to it, I
-        wouldn't believe it.
+        <span>“我以前讨厌做笔记. </span>
+        如果我告诉过去的自己，我不仅会喜欢上记笔记，还会对此上瘾，我是绝对不会相信的。
         <span> Logseq has changed my life 🔥🔥🔥”</span>
       </p>
     )
   },
   {
-    label: 'Journaling',
+    label: '日记',
     iconUrl: IconImageJournals,
     descImgUrl: new URL('./assets/benefit-2.png', import.meta.url),
     refLink: 'https://discord.com/channels/725182569297215569/766475028978991104/965786173148627044',
@@ -60,29 +58,29 @@ const showcases = [
     userName: 'Kiernan',
     desc: (
       <p>
-        Understand yourself better.
+        更好地了解自己。
       </p>),
     feedback: (
       <p>
-        “Before Logseq, I didn't use to write a daily journal, now I feel that it has a great value!”
+        “在使用 Logseq 之前，我从不写日记，但现在我觉得它非常有意义”
       </p>
     )
   },
   {
-    label: 'Data Control',
+    label: '数据隐私',
     iconUrl: IconImageDataControl,
     descImgUrl: new URL('./assets/benefit-3.png', import.meta.url),
     refLink: 'https://twitter.com/15777984/status/1522601138738151427',
     userName: '@b05crypto',
     desc: (
       <p>
-        <span>Do all this without lock-in.</span> <br/>
-        And without risking your privacy.
+        <span>在不受限制的情况下完成这一切。</span> <br/>
+        且不会牺牲您的隐私。
       </p>),
     feedback: (
       <p>
-        <span>“Logseq does tracking everything in my life </span>
-        better than any tool I've ever used, including Roam and I have control of my data.”
+        <span>“Logseq 记录我生活中的一切</span>
+        做得比我用过的任何工具都要好, 包括 Roam，而且数据隐私有保障.”
       </p>
     )
   }
@@ -218,14 +216,14 @@ export function DailyShowcase() {
               <h2
                 className={cx('text-2xl sm:text-[36px] sm:leading-10 tracking-wide invisible', t[0] && 'ani-fade-in')}
               >
-                <span className="text-logseq-50/80">Logseq helps you</span>
-                <span> turn this daily mess into structured information.</span>
+                <span className="text-logseq-50/80">Logseq 帮助你</span>
+                <span> 将日常琐事变为有组织的信息.</span>
               </h2>
 
               <h1
                 className={cx('text-4xl leading-10 sm:py-10 sm:text-6xl py-3 invisible', t[1] && 'ani-slide-in-from-bottom')}>
-                <strong>Gain clarity</strong>
-                <span className="text-logseq-50/80"> in your everyday life:</span>
+                <strong>在日常生活中</strong>
+                <span className="text-logseq-50/80"> 理清思路:</span>
               </h1>
             </>
           )
@@ -312,7 +310,7 @@ export function DailyShowcase() {
 
                       <div className="ft">
                         <div className={'flex flex-col'}>
-                          <strong className="font-normal opacity-60">User Feedback</strong>
+                          <strong className="font-normal opacity-60">用户反馈</strong>
                           <span><span className="font-normal opacity-60 pr-2">by</span>{it.userName}</span>
                         </div>
                         <div className="flex items-center">
